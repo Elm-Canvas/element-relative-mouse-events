@@ -5,7 +5,10 @@ import Html.Attributes exposing (style)
 import ElementRelativeMouseEvents as Events exposing (Point)
 
 
+-- MAIN --
 
+
+main : Program Never (Maybe Point) Msg
 main =
     Html.beginnerProgram
         { model = Nothing 
@@ -13,8 +16,16 @@ main =
         , view = view
         }
 
+
+-- TYPES --
+
+
 type Msg
     = Click Point
+
+
+
+-- UPDATE --
 
 
 update : Msg -> Maybe Point -> Maybe Point
@@ -22,6 +33,10 @@ update msg maybePoint =
     case msg of
         Click point ->
             Just point
+
+
+-- VIEW
+
 
 
 view : Maybe Point -> Html Msg
