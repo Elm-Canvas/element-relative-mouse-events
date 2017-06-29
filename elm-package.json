@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "Element-relative mouse events",
-    "repository": "https://github.com/Elm-Canvas/element-relative-mouse-events.git",
+    "repository": "https://github.com/elm-canvas/element-relative-mouse-events.git",
     "license": "BSD3",
     "source-directories": [
         "src"
